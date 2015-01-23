@@ -42,7 +42,6 @@
 
 
 - (NSString *)jumbleKeyForWord:(NSString *)word {
-    NSString *str = @"stack";
     NSMutableArray *charArray = [NSMutableArray arrayWithCapacity:word.length];
     for (uint i = 0; i < word.length; ++i) {
         NSString *charStr = [word substringWithRange:NSMakeRange(i, 1)];
